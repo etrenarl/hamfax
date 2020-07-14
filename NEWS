@@ -1,3 +1,6 @@
+hamfax 0.9
+ * Use Qt5 instead of Qt4
+ * Fix ALSA deadlock while closing retriever window
 hamfax 0.8.1
  * Fix checkable entries in options menu
  * Fix hamlib parameters handling
