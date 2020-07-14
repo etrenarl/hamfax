@@ -29,13 +29,14 @@
 
 static FILE *log_file;
 
-#ifdef HAVE_LIBHAMLIB
+// #ifdef HAVE_LIBHAMLIB
 /**
  * The default setting for hamlib is logging to stderr. Adjust it to our log,
  * or use /dev/null to redirect the hamlib log.
  */
 static void set_hamlib_log()
 {
+    /*
 	if (log_file) {
 		rig_set_debug_file(log_file);
 
@@ -46,10 +47,13 @@ static void set_hamlib_log()
 		if (dev_null)
 			rig_set_debug_file(dev_null);
 	}
+    */
+    printf("Do nothing lol\n");
 }
-#else
+/*#else
 static inline void set_hamlib_log(FILE *) { }
 #endif
+*/
 
 int log_open(const char *file)
 {

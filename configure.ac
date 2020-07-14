@@ -28,7 +28,7 @@ AM_PROG_CC_C_O
 AC_PROG_INSTALL
 
 PKG_PROG_PKG_CONFIG
-PKG_CHECK_MODULES([Qt4], [QtCore QtGui])
+PKG_CHECK_MODULES([Qt], [Qt5Core Qt5Widgets])
 
 AH_TEMPLATE(USE_FILE, [Build with support for audio files.])
 AC_CHECK_LIB(audiofile, afOpenFile,

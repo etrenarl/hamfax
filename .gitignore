@@ -27,3 +27,13 @@ depcomp
 lib/*.o
 src/*.o
 hamfax
+
+# vim tmp files
+*.swp
+
+# qmake files
+*.pro
+
+# ctags
+src/tags
+lib/tags

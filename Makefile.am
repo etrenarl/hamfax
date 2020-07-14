@@ -34,8 +34,8 @@ hamfax_SOURCES = \
         src/hamfax.cpp\
 	$(lib_src)
 
-LIBS+=@Qt4_LIBS@
-hamfax_CXXFLAGS = @Qt4_CFLAGS@ -Wall
+LIBS+=@Qt_LIBS@
+hamfax_CXXFLAGS = @Qt_CFLAGS@ -Wall -fPIC
 hamfax_CPPFLAGS = -DPKGDATADIR=\"$(pkgdatadir)\" -Iinclude/
 
 nodist_hamfax_SOURCES = \
